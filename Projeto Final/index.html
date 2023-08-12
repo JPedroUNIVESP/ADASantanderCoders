@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #principal {
+            margin-top: 15%;
+            margin-left: 25%;
+            display: flex;
+            flex-direction: column;
+            height: 50%;
+            width: 50%;
+            text-align: center;
+            align-items: center;
+            /* background-color: red; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id = "principal">
+        <h1>Jogo da Forca</h1>
+
+        <h2>Tente acertar a palavra abaixo:</h2>
+
+            <div id = "palavraSecreta">
+
+            </div>
+
+        <br>
+        
+            <div id = "status">
+
+            </div>
+
+        <label for="texto">Digite uma letra:</label>
+
+        <br>
+
+        <input type="text" id="texto" name="texto" required>
+
+        <br>
+
+            <button onclick= clicaBotao()>
+                Tentar
+            </button>
+
+        <br>
+
+            <div id = "tentativas">
+                
+            </div>
+
+        <br>
+
+            <div id = "corretas">
+                
+            </div>
+        <br>
+
+            <div id = "erradas">
+                
+            </div>
+    </div>
+
+    
+
+    <script type="text/javascript" src="./code.js"></script>
+
+</body>
+</html>
