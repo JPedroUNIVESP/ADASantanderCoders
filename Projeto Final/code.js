@@ -47,7 +47,7 @@ function inserePalavra () {
 
 function letraCertaErrada(){
 
-    var letra = document.getElementById("texto").value;
+    var letra = document.getElementById("texto").value.toLowerCase();
 
     if(letra.length > 1){
 
@@ -166,5 +166,5 @@ function clicaBotao(){
     atualizaTentativaCorretasErradas()
     verificaGanhouPerdeu()
     limpaCampo()
-
+    
 }
